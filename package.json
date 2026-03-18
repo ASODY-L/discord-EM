@@ -1,0 +1,13 @@
+{
+  "name": "discord-afk-bot",
+  "version": "1.0.0",
+  "description": "Simple Discord bot to stay in voice channel 24/7",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "@discordjs/voice": "^0.16.0"
+  }
+}

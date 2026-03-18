@@ -15,7 +15,7 @@ client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
 
   // 🔊 أمر دخول
-  if (message.content === "/join") {
+  if (message.content === "!join") {
     const channel = message.member.voice.channel;
 
     if (!channel) {
@@ -32,7 +32,7 @@ client.on('messageCreate', async (message) => {
   }
 
   // ❌ أمر خروج
-  if (message.content === "/leave") {
+  if (message.content === "!leave") {
     const connection = getVoiceConnection(message.guild.id);
 
     if (!connection) {

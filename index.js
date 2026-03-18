@@ -10,7 +10,7 @@ const client = new Client({
   ]
 });
 
-const TOKEN = "MTI2OTQ3ODcwNDY2OTY1NTA2Mg.GDNs4o.HgN8HXo1NsG_U384LGnVs9AmZA1OrCFCGSFv4I";
+const TOKEN = process.env.TOKEN;
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
 
